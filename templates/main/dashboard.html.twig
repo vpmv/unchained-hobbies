@@ -1,0 +1,21 @@
+{% extends 'default.html.twig' %}
+{% set row = 0 %}
+{% set col = 0 %}
+
+{% block content %}
+    <div class="row">
+        {% for catId,c in applications %}
+            {% set colClass = col == 0 ? 'col-sm-12 col-md-8 app-wide' : 'col-sm-6 col-md-4 app-narrow' %}
+            {% if row == 1 %}
+                {% set colClass = col == 0 ? 'col-sm-6 col-md-4 app-narrow' : 'col-sm-12 col-md-8 app-wide' %}
+            {% endif %}
+
+            {% include 'main/blocks/link_category.html.twig' with {category: c, class: colClass, include_apps: 0} %}
+
+            {% if col == 1 %}
+                {% set row = row == 1 ? 0 : 1 %}
+            {% endif %}
+            {% set col = col == 1 ? 0 : 1 %}
+        {% endfor %}
+    </div>
+{% endblock %}

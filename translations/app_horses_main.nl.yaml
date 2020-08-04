@@ -1,0 +1,58 @@
+text.dashboard.empty.verbose: Geen paarden op stal
+action.entity.create.verbose: Nieuw paard
+text.entity.create.verbose: Nieuw paard
+text.entity.edit.verbose: Paard bewerken
+
+title.horses: Paarden
+entity.verbose: Paard
+entity.verbose_plural: Paarden
+
+label.status: Beschikbaar
+label.stables: Stalling
+label.height: Schofthoogte
+label.class: Klasse
+label.behaviour_stable: Gedrag op stal
+label.behaviour_riding: Rijgedrag
+label.dominance: Dominantie
+label.birth: Geboortedatum
+label.death: Overlijden
+label.injured: Gebelesseerd
+label.injured.enabled: Gebelesseerd
+label.injured.disabled: Gezond
+label.rides: Ritten
+label.whip: Zweep
+label.stirrup_left: Beugel L
+label.stirrup_right: Beugel R
+
+choice.behaviour_stable.alert: Alert
+choice.behaviour_stable.aggressive: Aggressief
+choice.behaviour_stable.kind: Zachtaardig
+choice.behaviour_stable.curious: Nieuwsgierig
+choice.behaviour_stable.grumpy: Chagrijnig
+choice.behaviour_stable.sweet: Lief
+choice.behaviour_stable.cuddle: Knuffelbeer
+choice.behaviour_stable.calm: Kalm
+choice.behaviour_stable.unstable: Instabiel
+
+choice.behaviour_riding.sensitive: Gevoelig
+choice.behaviour_riding.insensitive: Ongevoelig
+choice.behaviour_riding.fast: Snel
+choice.behaviour_riding.passive: Passief
+choice.behaviour_riding.active: Actief
+choice.behaviour_riding.calm: Kalm
+choice.behaviour_riding.jumpy: Springerig
+choice.behaviour_riding.bucking: Bokt
+choice.behaviour_riding.deep: Diepe gangen
+choice.behaviour_riding.supple: Soepel
+choice.behaviour_riding.fiery: Vurig
+choice.behaviour_riding.eager: Gretig
+choice.behaviour_riding.unstable: Instabiel
+
+choice.dominance.passive: Passief
+choice.dominance.regular: Gewoon
+choice.dominance.dominant: Dominant
+choice.dominance.diva: Diva
+
+choice.whip.none: Nee
+choice.whip.short: Kort
+choice.whip.long: Lang

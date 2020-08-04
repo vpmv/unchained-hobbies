@@ -1,0 +1,111 @@
+# reference value
+application:
+    name: riding_schools
+    category: horses
+    routes:
+        en: stables
+        nl: maneges
+
+
+    fields:
+        photo:
+            type: image
+            required: false
+            default: ~
+            # allow specifying field type with configuration
+            _configuration:
+                max_file_size: 500k
+        name:
+            type: text
+            unique: true
+            required: true
+        type:
+            type: choice
+            options: [ riding_school, stable, private_stable, coaching ]
+            default: 0
+        discipline:
+            type: choice
+            label: disciplines
+            options: [ dressage, jump, carrousel, western, voltige, free_roam, therapy ]
+            multiple: true
+            required: false
+        pension_stables:
+            type: boolean
+            label_disabled: pension_stables_false
+            label_enabled: pension_stables_true
+            dashboard:
+                visibility: detail
+        date_founded:
+            type: date
+            label: Date founded
+            format: ddMMyyyy
+            year_min: 100
+            year_max: 0
+            required: false
+            public: false
+            dashboard: false
+        date_closed:
+            type: date
+            label: Date closed
+            format: ddMMyyyy
+            year_min: 45
+            year_max: 0
+            required: false
+            public: false
+            dashboard: false
+        years_in_business:
+            type: text
+            pointer:
+                fields: [ date_founded, date_closed ]
+                type: external
+            dashboard:
+                visibility: detail
+        address:
+            type: textbox
+            required: false
+            dashboard: false
+        horses:
+            type: number
+            source: count_horses
+            dashboard:
+                visibility: large
+        instructors:
+            type: number
+            source: count_instructors
+            dashboard:
+                visibility: large
+#        rides:
+#            type: number
+#            source: count_rides
+#            dashboard:
+#                visibility: detail
+
+    schema:
+        symlink:
+            name:
+                column: slug
+                filter: slugify
+
+    # Django style meta configuration for model
+    meta:
+        # primary identifier when used in other applications
+        # and detail pages
+        exposes: name
+
+    sources:
+        count_horses:
+            application: horses-main
+            function: count # function precedes fields
+            pointer: dashboard # preferred position for pointer config
+        count_instructors:
+            application: horse-riding-instructors
+            function: count
+#        count_rides:
+#            application: horse-riding-log
+#            join_source: horses
+#            function: count
+
+    modules:
+        detail:
+            param: name # todo
+

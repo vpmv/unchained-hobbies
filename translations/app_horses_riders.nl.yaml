@@ -1,0 +1,34 @@
+label.empty_%verbose%: No people, no love
+title.riders: Ruiters
+
+entity.verbose: Ruiter
+entity.verbose_plural: Ruiters
+
+label.photo: Foto
+label.name: Naam
+label.surname: Achternaam
+label.gender: Geslacht
+label.age: Leeftijd
+label.height: Lengte
+label.weight: Gewicht
+label.comment: Commentaar
+label.handicap: Handicap
+label.riding_school: Manege
+label.date_started: Gestart
+label.date_stopped: Gestopt
+label.experience: Rijervaring
+label.riding_level: Niveau
+label.count_rides: Ritten
+
+choice.handicap.autism: A.S.S.
+choice.handicap.hearing: Gehoor/doof
+choice.handicap.mental_cognitive: Mentaal - Cognitief
+choice.handicap.mental_memory: Mentaal - Geheugen
+choice.handicap.mental_psyche: Mentaal - Psyche
+choice.handicap.mental_other: Mentaal - Anders
+choice.handicap.physical_amputee: Missende ledenmaten
+choice.handicap.physical_muscular: Fysiek - Spieren
+choice.handicap.physical_back: Fysiek - Rug
+choice.handicap.physical_other: Fysiek - Anders
+choice.handicap.vision: Slechtziend/Visus algemeen
+choice.handicap.vision_blind: Blind

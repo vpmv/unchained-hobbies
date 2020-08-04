@@ -1,0 +1,143 @@
+# reference value
+application:
+    category: horses
+    name: horse riding log
+    title: Riding Log
+    routes:
+        en: rides
+        nl: log
+
+    # symfony style form definition
+    #   input identifier => config
+    fields:
+        date:
+            type: date
+            format: ddMMyyyy
+            year_max: 1
+            required: true
+            default: today
+#            public: false
+        time:
+            type: time
+            format: HHmm
+            default: 11:00:00
+            dashboard:
+                visibility: detail
+#        stables:
+#            type: choice
+#            label: Riding school
+#            source: stables
+#            required: true
+#            dashboard:
+#                visibility: detail
+        stables:
+            label: Riding school
+            source: stables.name
+            dashboard:
+                visibility: detail
+        horse:
+            source: horses.photo
+            required: true
+            group_by:
+                source: horses_stables
+        instructor:
+            type: choice
+            source: instructors.name
+            required: true
+            public: false
+            group_by: stables.name
+        arena:
+            type: choice
+            options: [ inside, "outside_covered", "outside_long", "outside_show", "contest", "free_range" ]
+            default: 1
+            required: true
+            dashboard:
+                visibility: large
+        riders:
+            source: riders.name
+            required: false
+            multiple: true
+            public: false
+            dashboard:
+                visibility: large
+        discipline:
+            type: choice
+            options: [ dressage, jump, carrousel, western, voltige, discipline_other ]
+            default: 0
+            required: true
+            dashboard:
+                visibility: detail
+        private:
+            type: boolean
+            label_on: Private lesson
+            label_off: Group lesson
+            default: 0
+            public: false
+            dashboard:
+                visibility: large
+        exercise:
+            type: text
+            public: false
+            dashboard:
+                visibility: desktop
+        rating_ride:
+            type: rating # fixme: new type rating/range
+            options: [ 1,2,3,4,5 ]
+            default: 2 # => 3
+            public: false
+            dashboard:
+                visibility: large
+        rating_self:
+            type: rating # fixme: new type rating/range
+            label: Rating performance
+            options: [ 1,2,3,4,5 ]
+            default: 2 # => 3
+            public: false
+            dashboard:
+                visibility: large
+        rating_instructions:
+            type: rating # fixme: new type rating/range
+            options: [ 1,2,3,4,5 ]
+            default: 2 # => 3
+            public: false
+            dashboard:
+                visibility: detail
+        gear:
+            source:
+                source: gear
+                fields: [brand, name, color]
+            multiple: true
+            required: false
+            public: false
+        comment:
+            type: text
+            maxlength: 250
+            public: false
+            dashboard:
+                visibility: detail
+
+    sources:
+        horses:
+            application: horses-main
+        instructors:
+            application: horse-riding-instructors
+        riders:
+            application: horses-riders
+        gear:
+            application: horses-gear
+#        stables:
+#            application: horses-stables
+        stables:
+            join_source: horses
+            application: horses-stables
+            foreign_column: horses_stables_id
+        horse_stables:
+            source: horse_stables
+
+    meta:
+        exposes: [date, time]
+        verbose_name: Ride
+        verbose_name_plural: Rides
+
+    sort:
+        date: desc

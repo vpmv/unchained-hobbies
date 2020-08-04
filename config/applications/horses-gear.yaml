@@ -1,0 +1,49 @@
+application:
+    category: horses
+    fields:
+        photo:
+            type: image
+            required: false
+        brand: ~
+        name: ~
+        type:
+            type: choice
+            options:
+                - pants
+                - tops
+                - undergarment
+                - boots
+                - riding gear
+                - accessories
+        color: ~
+        date_purchased:
+            type: date
+            format: ddMMyyyy
+#            _transform:
+#                date:
+#                    round_to: auto
+        count:
+            type: number
+            source: count_used
+#        last_used:
+#            source: date_used.date
+#            ignored: true
+
+    sources:
+        count_used:
+            application: horse-riding-log
+            function: count_in
+        date_used:
+            application: horse-riding-log
+            function: find_in_max
+            invert_join: true
+            fields: [date] # fixme
+
+    modules:
+        detail:
+            enabled: false
+        dashboard:
+            sort: [horse]
+
+    meta:
+        exposes: [brand,name,color]

@@ -1,0 +1,105 @@
+title.category.horses: Paardrijden
+category.horses.description: Logboek & overzicht
+
+title.category.cooking: Koken
+category.cooking.description: Fav. recepten & inventaris
+
+text.dashboard.empty.verbose: "Geen verbose bekend"
+action.entity.create.verbose: "verbose aanmaken"
+text.entity.create.verbose: Aanmaken
+text.entity.edit.verbose: Bewerken
+
+dialog.delete_warning: Weet je zeker dat je dit wil verwijderen?
+
+label.photo: Foto
+label.type: Soort
+label.name: Naam
+label.gender: Geslacht
+label.age: Leeftijd
+label.comment: Commentaar
+label.horse: Paard
+label.horses: Paarden
+label.address: Adres
+label.discipline: Discipline
+label.disciplines: Disciplines
+
+user.horses_main.miniature: Miniatuur
+user.horses_main.a_pony: A-Pony
+user.horses_main.b_pony: B-Pony
+user.horses_main.c_pony: C-Pony
+user.horses_main.d_pony: D-Pony
+user.horses_main.e_pony: E-Pony
+user.horses_main.horse: Paard
+
+choice.gender.mare: Merrie
+choice.gender.gelding: Ruin
+choice.gender.stallion: Hengst
+
+choice.gender.male: Man
+choice.gender.female: Vrouw
+
+choice.discipline.dressage: Dressuur
+choice.discipline.jump: Springen
+choice.discipline.western: Western
+choice.discipline.voltige: Voltige
+choice.discipline.carrousel: Carrousel
+choice.discipline.combined: Mennen
+choice.discipline.therapy: Therapie
+choice.discipline.eventing: Eventing
+choice.discipline.free_roam: Buitenritten
+choice.discipline.discipline_other: Anders
+
+pension_stables: Pensionstalling
+pension_stables_false: Geen pensionstalling
+pension_stables_true: Heeft pensionstalling
+
+# general
+label.new: Nieuw
+label.edit: Bewerk
+label.editing: Bewerken
+label.save: Opslaan
+label.cancel: Annuleren
+label.select...: Maak een keuze...
+label.back: Terug
+label.overview: Overzicht
+
+value.date.year-mo-MO-day-DAY: DAY. day-mo-year
+value.date.year-mo-MO-day: day-mo-year
+value.time.year.nn: nn jaar
+value.time.year_plural.nn: nn jaar
+value.time.month.nn: nn mnd
+value.time.month_plural.nn: nn mnd.
+value.time.day.nn: nn dag
+value.time.day_plural.nn: nn dg.
+value.time.minute.nn: nn min.
+value.time.minute_plural.nn: nn min.
+value.time.just_now: zojuist
+
+time.month.jan: jan
+time.month.feb: feb
+time.month.mar: mrt
+time.month.apr: apr
+time.month.may: mei
+time.month.jun: jun
+time.month.jul: jul
+time.month.aug: aug
+time.month.sep: sep
+time.month.oct: okt
+time.month.nov: nov
+time.month.dec: dec
+
+time.dow.mon: ma
+time.dow.tue: di
+time.dow.wed: wo
+time.dow.thu: do
+time.dow.fri: vr
+time.dow.sat: za
+time.dow.sun: zo
+
+time.dow.monday: maandag
+time.dow.tuesday: dinsdag
+time.dow.wednesday: woensdag
+time.dow.thursday: donderdag
+time.dow.friday: vrijdag
+time.dow.saturday: zaterdag
+time.dow.sunday: zondag

@@ -1,0 +1,100 @@
+title.category.horses: Horse riding
+category.horses.description: Overview & logs
+
+title.category.cooking: Cooking
+category.cooking.description: Fav. recipes
+
+text.dashboard.empty.verbose: "No known verbose"
+action.entity.create.verbose: "Create verbose"
+text.entity.create.verbose: Create
+text.entity.edit.verbose: Edit
+
+dialog.delete_warning: Are you sure, you want to delete this?
+
+label.photo: Photo
+label.type: Type
+label.name: Name
+label.gender: Gender
+label.age: Age
+label.comment: Comment
+label.horse: Horse
+label.horses: Horses
+label.address: Address
+label.discipline: Discipline
+label.disciplines: Disciplines
+
+user.horses_main.miniature: Miniature
+user.horses_main.a_pony: A-Pony
+user.horses_main.b_pony: B-Pony
+user.horses_main.c_pony: C-Pony
+user.horses_main.d_pony: D-Pony
+user.horses_main.e_pony: E-Pony
+user.horses_main.horse: Horse
+
+choice.gender.mare: Mare
+choice.gender.gelding: Gelding
+choice.gender.stallion: Stallion
+
+choice.gender.male: Male
+choice.gender.female: Female
+
+choice.discipline.dressage: Dressage
+choice.discipline.jump: Jumping
+choice.discipline.western: Western
+choice.discipline.voltige: Voltige
+choice.discipline.carrousel: Carrousel
+choice.discipline.free_roam: Outdoor riding
+choice.discipline.combined: Combined driving
+choice.discipline.therapy: Therapy
+choice.discipline.eventing: Eventing
+choice.discipline.discipline_other: Other
+
+label.new: New
+label.edit: Edit
+label.editing: Editing
+label.save: Save
+label.cancel: Cancel
+label.select...: Choose...
+label.back: Back
+label.overview: Overview
+
+value.date.year-mo-MO-day-DAY: DAY year-mo-day
+value.date.year-mo-MO-day: year-mo-day
+value.time.year.nn: nn year
+value.time.year_plural.nn: nn years
+value.time.month.nn: nn mo.
+value.time.month_plural.nn: nn mo.
+value.time.day.nn: nn day
+value.time.day_plural.nn: nn days.
+value.time.minute.nn: nn min
+value.time.minute_plural.nn: nn mins
+value.time.just_now: seconds ago
+
+time.month.jan: jan
+time.month.feb: feb
+time.month.mar: mar
+time.month.apr: apr
+time.month.may: may
+time.month.jun: jun
+time.month.jul: jul
+time.month.aug: aug
+time.month.sep: sep
+time.month.oct: oct
+time.month.nov: nov
+time.month.dec: dec
+
+time.dow.mon: Mo
+time.dow.tue: Tu
+time.dow.wed: We
+time.dow.thu: Th
+time.dow.fri: Fr
+time.dow.sat: Sa
+time.dow.sun: Su
+
+time.dow.monday: monday
+time.dow.tuesday: tuesday
+time.dow.wednesday: wednesday
+time.dow.thursday: thursday
+time.dow.friday: friday
+time.dow.saturday: saturday
+time.dow.sunday: sunday

@@ -1,0 +1,46 @@
+title.horse_riding_log: Ritten
+
+entity.verbose: Rit
+entity.verbose_plural: Ritten
+
+label.date: Datum
+label.time: Tijd
+label.riding_school: Manege
+label.instructor: Instructeur
+label.arena: Rijbaan
+label.riders: Deelnemers
+label.private: Privé
+label.exercise: Oefeningen
+label.rating_ride: Rit
+label.rating_performance: Zelfreflectie
+label.rating_instructions: Instructie
+label.gear: Uitrusting
+
+label.private.enabled: Privéles
+label.private.disabled: Groepsles
+
+choice.arena.inside: Binnen
+choice.arena.outside: Buiten onoverdekt
+choice.arena.outside_covered: Buiten overdekt
+choice.arena.outside_long: Buiten verlengd
+choice.arena.outside_show: Terras
+choice.arena.contest: Wedstrijd
+choice.arena.free_range: Buitenrit
+
+choice.rating_ride.1: 1
+choice.rating_ride.2: 2
+choice.rating_ride.3: 3
+choice.rating_ride.4: 4
+choice.rating_ride.5: 5
+
+choice.rating_self.1: 1
+choice.rating_self.2: 2
+choice.rating_self.3: 3
+choice.rating_self.4: 4
+choice.rating_self.5: 5
+
+choice.rating_instructions.1: 1
+choice.rating_instructions.2: 2
+choice.rating_instructions.3: 3
+choice.rating_instructions.4: 4
+choice.rating_instructions.5: 5

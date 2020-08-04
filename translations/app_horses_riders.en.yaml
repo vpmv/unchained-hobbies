@@ -1,0 +1,34 @@
+label.empty_%verbose%: No people, no love
+title.riders: Riders
+
+entity.verbose: Rider
+entity.verbose_plural: Riders
+
+label.photo: Photo
+label.name: Name
+label.surname: Surname
+label.gender: Gender
+label.age: Age
+label.height: Length
+label.weight: Weight
+label.comment: Comments
+label.handicap: Handicap
+label.riding_school: Riding school
+label.date_started: Started
+label.date_stopped: Stopped
+label.experience: Experience
+label.riding_level: Level
+label.count_rides: Rides
+
+choice.handicap.autism: A.S.S.
+choice.handicap.hearing: Hearing/deaf
+choice.handicap.mental_cognitive: Mental - Cognition
+choice.handicap.mental_memory: Mental - Memory
+choice.handicap.mental_psyche: Mental - Psyche
+choice.handicap.mental_other: Mental - Other
+choice.handicap.physical_amputee: Amputee
+choice.handicap.physical_muscular: Physical - Muscular
+choice.handicap.physical_back: Physical - Back
+choice.handicap.physical_other: Physical - Other
+choice.handicap.vision: Visually impared
+choice.handicap.vision_blind: Blind

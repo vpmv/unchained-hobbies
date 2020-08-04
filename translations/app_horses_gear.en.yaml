@@ -1,0 +1,21 @@
+title.horses-gear: Riding gear
+
+entity.verbose: Gear
+entity.verbose_plural: Gear
+
+label.brand: Brand
+label.color: Colour
+label.date_purchased: Buying date
+label.count: Uses
+label.last_used: Last used
+
+label.private.enabled: Private
+label.private.disabled: Group
+
+choice.type.pants: Pants
+choice.type.tops: Tops
+choice.type.undergarment: Undergarment
+choice.type.boots: Boots
+choice.type.riding gear: Riding gear
+choice.type.accessories: Accessories
+

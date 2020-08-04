@@ -1,0 +1,27 @@
+title.cooking: Cooking
+
+entity.verbose: Recipe
+entity.verbose_plural: Recipes
+
+choice.course.breakfast: Breakfast
+choice.course.lunch: Lunch
+choice.course.dinner: Dinner
+choice.course.dessert: Dessert
+choice.course.snack: Snack
+
+choice.source.book: Book
+choice.source.magazine_ah: Allerhande Magazine
+choice.source.magazine_kg: Koken & Genieten
+choice.source.magazine_other: Other magazine
+choice.source.web_ah: Allerhande.nl
+choice.source.web_smul: Smulweb
+choice.source.web_other: Internet
+choice.source.other: Other
+
+label.course: Course
+label.source: Source
+label.issue: Issue/Pg
+label.author: Author
+label.link: URL
+label.ingredients: Ingredients
+label.recipe: Recipe

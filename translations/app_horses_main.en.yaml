@@ -1,0 +1,60 @@
+title.horses: Horses
+entity.verbose: Horse
+entity.verbose_plural: Horses
+
+text.dashboard.empty.verbose: No horses in these stables!
+action.entity.create.verbose: Create new horse
+text.entity.create.verbose: Creating horse
+text.entity.edit.verbose: Editing horse
+
+
+label.status: Availability
+label.stables: Stable
+label.height: Withers
+label.class: Class
+label.behaviour_stable: Behaviour in stables
+label.behaviour_riding: Riding characteristics
+label.dominance: Dominance
+label.birth: Birth
+label.death: Death
+label.injured: Injured
+label.injured.enabled: Sick/Injured
+label.injured.disabled: Healthy
+label.rides: Rides
+label.whip: Whip
+label.stirrup_left: Stirrup L
+label.stirrup_right: Stirrup R
+
+
+choice.behaviour_stable.alert: Alert
+choice.behaviour_stable.aggressive: Aggressive
+choice.behaviour_stable.kind: Kind
+choice.behaviour_stable.curious: Curious
+choice.behaviour_stable.grumpy: Grumpy
+choice.behaviour_stable.sweet: Sweet
+choice.behaviour_stable.cuddle: Cuddly
+choice.behaviour_stable.calm: Calm
+choice.behaviour_stable.unstable: Instabiel
+
+choice.behaviour_riding.sensitive: Sensitive
+choice.behaviour_riding.insensitive: Insensitive
+choice.behaviour_riding.fast: Fast
+choice.behaviour_riding.passive: Passive
+choice.behaviour_riding.active: Active
+choice.behaviour_riding.calm: Calm
+choice.behaviour_riding.jumpy: Jumpy
+choice.behaviour_riding.bucking: Bucks
+choice.behaviour_riding.deep: Deep
+choice.behaviour_riding.supple: Supple
+choice.behaviour_riding.fiery: Fiery
+choice.behaviour_riding.eager: Eager
+choice.behaviour_riding.unstable: Unstable
+
+choice.dominance.passive: Passive
+choice.dominance.regular: Regular
+choice.dominance.dominant: Dominant
+choice.dominance.diva: Diva
+
+choice.whip.none: None
+choice.whip.short: Short
+choice.whip.long: Long

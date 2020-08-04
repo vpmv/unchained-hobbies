@@ -1,0 +1,96 @@
+application:
+    category: horses
+    name: horse riding events
+    title: Events
+    routes:
+        en: events
+        nl: wedstrijden
+
+    fields:
+        photo:
+            type: image
+            required: false
+            public: false
+        date:
+            type: date
+            format: ddMMyyyy
+            year_min: 10
+            year_max: 1
+            required: true
+        time:
+            type: time
+            required: false
+            dashboard:
+                visibility: desktop
+        type:
+            type: choice
+            options: [ competition, show ]
+            default: 0
+            dashboard:
+                visibility: detail
+        location:
+            type: choice
+            source: stables
+            required: false
+            dashboard:
+                visibility: detail
+        horse:
+            type: choice
+            source: horses
+            required: true
+            group_by: stable
+            multiple: true
+            dashboard:
+                visibility: large
+        discipline:
+            type: choice
+            options: [ dressage, jump, carrousel, western, eventing, voltige ]
+            default: 0
+            required: true
+            dashboard:
+                visibility: detail
+        exercise:
+           type: text
+        description:
+            type: textbox
+            dashboard: false
+        starting_position:
+            type: number
+            dashboard:
+                visibility: detail
+        result:
+            type: boolean
+            default: 0
+        result_position:
+            type: number
+            dashboard:
+                visibility: desktop
+        result_score:
+            type: number
+            dashboard:
+                visibility: detail
+        result_prize:
+            type: text
+            public: false
+            dashboard:
+                visibility: detail
+        score_sheet:
+            type: file
+            public: false
+            dashboard:
+                visibility: detail
+
+    sources:
+        horses:
+            application: horses-main
+        stables:
+            application: horses-stables
+
+    meta:
+        exposes: exercise
+
+#    modules:
+#        detail: false
+
+    sort:
+        date: desc

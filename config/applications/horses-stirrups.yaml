@@ -1,0 +1,26 @@
+application:
+    name: stirrups
+
+    fields:
+        photo:
+            source: horses.photo
+        stirrup_left:
+            source: horses.stirrup_left
+            ignored: true
+        stirrup_right:
+            source: horses.stirrup_right
+            ignored: true
+
+    sources:
+        horses:
+            application: horses-main
+#            fields: [ name, photo ]
+
+    modules:
+        detail:
+            enabled: false
+        dashboard:
+            sort: [horse]
+
+    meta:
+        exposes: [stirrup_right, stirrup_left]

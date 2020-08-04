@@ -1,0 +1,29 @@
+title.horse_riding_log: Rides
+
+entity.verbose: Ride
+entity.verbose_plural: Rides
+
+label.date: Date
+label.time: Time
+label.riding_school: Riding school
+label.instructor: Instructor
+label.arena: Arena
+label.riders: Riders
+label.private: Private
+label.exercise: Exersises
+label.rating_ride: Ride
+label.rating_performance: Performance
+label.rating_instructions: Instructions
+label.gear: Equipment
+
+label.private.enabled: Private
+label.private.disabled: Group
+
+choice.arena.inside: Inside
+choice.arena.outside: Outside
+choice.arena.outside_covered: Outside covered
+choice.arena.outside_long: Outside long
+choice.arena.outside_show: Outside show
+choice.arena.contest: Competition
+choice.arena.free_range: Free range
+

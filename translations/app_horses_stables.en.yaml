@@ -1,0 +1,15 @@
+title.riding_schools: Stables
+entity.verbose: Riding school
+entity.verbose_plural: Riding school
+
+label.date_founded: Founding
+label.date_closed: Closing
+label.years_in_business: In business
+label.pension_stables: Pension stables
+label.instructors: Instructors
+label.rides: Rides
+
+choice.type.riding_school: Riding school
+choice.type.riding_school_plural: Riding schools
+choice.type.private_stable: Private stables
+choice.type.stable: Public stables

@@ -1,0 +1,22 @@
+title.horse_riding_events: Events
+
+entity.verbose: Competition
+entity.verbose_plural: Competitions
+
+choice.type.competition: Competition
+choice.type.show: Show
+
+label.date: Date
+label.time: Time
+label.location: Location
+label.exercise: Exercise
+label.description: Description
+label.type: Type
+label.starting_position: Starting pos.
+label.result: Result
+label.result.enabled: Passed
+label.result.disabled: Not passed
+label.result_position: Rank pos.
+label.result_score: Score
+label.result_prize: Prize
+label.score_sheet: Score sheet

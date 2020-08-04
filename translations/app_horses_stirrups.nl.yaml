@@ -1,0 +1,8 @@
+# horses-stirrups
+title.stirrups: Beugels
+
+entity.verbose: Beugelafstelling
+entity.verbose_plural: Beugelafstellingen
+
+label.stirrup_left: Links
+label.stirrup_right: Rechts

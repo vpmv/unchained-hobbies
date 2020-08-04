@@ -1,0 +1,27 @@
+title.cooking: Recepten
+
+entity.verbose: Recept
+entity.verbose_plural: Recepten
+
+choice.course.breakfast: Ontbijt
+choice.course.lunch: Lunch
+choice.course.dinner: Diner
+choice.course.dessert: Dessert
+choice.course.snack: Snack
+
+choice.source.book: Boek
+choice.source.magazine_ah: Allerhande magazine
+choice.source.magazine_kg: Koken & Genieten
+choice.source.magazine_other: Magazine
+choice.source.web_ah: Allerhande.nl
+choice.source.web_smul: Smulweb
+choice.source.web_other: Internet
+choice.source.other: Anders
+
+label.course: Gang
+label.source: Bron
+label.issue: Nummer/Pg
+label.author: Auteur
+label.link: URL
+label.ingredients: Ingrediënten
+label.recipe: Recept

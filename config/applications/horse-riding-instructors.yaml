@@ -1,0 +1,46 @@
+application:
+    name: riding instructors
+    category: horses
+    routes:
+        en: instructors
+        nl: instructeurs
+
+
+    fields:
+        photo:
+            type: image
+        stables:
+            type: choice
+            label: Riding school
+            source: stables
+            required: true
+        name:
+            type: text
+            maxlength: 150
+            required: true
+            unique: true
+        lessons:
+            source: rides
+            type: number
+            required: true
+            ignored: true #todo
+
+    modules:
+      detail:
+        enabled: false
+
+    sort:
+        - name
+
+    meta:
+        exposes: name
+        verbose_name: Instructor
+        verbose_name_plural: Instructors
+
+    sources:
+        stables:
+            application: horses-stables
+        rides:
+            application: horse-riding-log
+            function: count
+            link: dashboard

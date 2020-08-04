@@ -1,0 +1,22 @@
+title.horse_riding_events: Wedstrijden
+
+entity.verbose: Wedstrijd
+entity.verbose_plural: Wedstrijden
+
+choice.type.competition: Wedstrijd
+choice.type.show: Show
+
+label.date: Datum
+label.time: Tijd
+label.location: Locatie
+label.exercise: Oefening
+label.description: Omschrijving
+label.type: Soort
+label.starting_position: Startpositie
+label.result: Geslaagd
+label.result.enabled: Geslaagd
+label.result.disabled: Niet behaald
+label.result_position: Eindplaats
+label.result_score: Totaalscore
+label.result_prize: Prijs
+label.score_sheet: Scoreblad

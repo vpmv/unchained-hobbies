@@ -1,0 +1,161 @@
+# reference value
+application:
+  category: horses
+  routes:
+    en: riders
+    nl: ruiters
+
+  name: riders
+
+  fields:
+    photo:
+      type: image
+      required: false
+      default: ~
+      # allow specifying field type with configuration
+      _configuration:
+        max_file_size: 500k
+    stable:
+      type: choice
+      label: Riding school
+      source: stables.name
+      required: true
+      dashboard:
+        visibility: detail
+    name:
+      type: text
+      required: true
+    surname:
+      type: text
+      required: false
+    gender:
+      type: choice
+      options: [ male, female ]
+      required: true
+      _configuration:
+        icons:
+        - value: man
+          icon: fa-gender-m
+        - value: woman
+          icon: fa-gender-f
+      dashboard:
+        visibility: detail
+    date_of_birth:
+      type: date
+      label: Age
+      format: ddMMyyyy
+      year_min: 99
+      year_max: -5 # Y + -5
+      required: false
+      _transform:
+        date:
+          round_to: year
+      dashboard:
+        visibility: large
+    height:
+      type: number
+      _transform:
+        number:
+          scalar: string
+          suffix: cm
+      dashboard:
+        visibility: detail
+    weight:
+      type: number
+      _transform:
+        number:
+          scalar: string
+          suffix: kg
+      dashboard:
+        visibility: detail
+    date_started:
+      type: date
+      format: ddMMyyyy
+      year_min: 50
+      year_max: 0
+      required: false
+      public: false
+      dashboard: false
+    date_stopped:
+      type: date
+      format: ddMMyyyy
+      year_min: 50
+      year_max: 5
+      required: false
+      public: false
+      dashboard: false
+    experience:
+      type: text
+      pointer:
+        fields: [date_started, date_stopped]
+        type: external
+      dashboard:
+        visibility: large
+    riding_level:
+      type: text
+      maxlength: 50
+      required: false
+      dashboard:
+        visibility: detail
+    comment:
+      type: text
+      maxlength: 250
+      public: false
+      dashboard: false
+    handicap:
+      type: choice
+      options:
+      - autism
+      - hearing
+      - mental_cognitive
+      - mental_memory
+      - mental_psyche
+      - mental_other
+      - physical_amputee
+      - physical_muscular
+      - physical_back
+      - physical_other
+      - vision
+      - vision_blind
+      multiple: true
+      required: false
+      public: false
+      dashboard: false
+    count_rides:
+      source: count_rides
+      type: number
+      dashboard:
+        visibility: large
+
+  sources:
+    stables:
+      application: horses-stables
+    count_rides:
+      application: horse-riding-log
+      function: count_in
+
+
+
+  # Django style meta configuration for model
+  meta:
+    exposes: [name, surname]
+
+  sort:
+    surname: asc
+    name: asc
+
+  modules:
+    detail:
+      param: name # todo
+
+  links:
+  - application: horse-rides-log
+    module: charts
+    label: charts
+
+  # fields used in searches
+  search:
+  - name
+  - discipline
+  - character
+  - comment

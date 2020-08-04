@@ -1,0 +1,15 @@
+title.riding_schools: Maneges
+entity.verbose: Manege
+entity.verbose_plural: Maneges
+
+label.date_founded: Openingsdatum
+label.date_closed: Slutingsdatum
+label.years_in_business: Bedrijfsjaren
+label.pension_stables: Pensionstalling
+label.instructors: Instructeurs
+label.rides: Ritten
+
+choice.type.riding_school: Manege
+choice.type.riding_school_plural: Maneges
+choice.type.private_stable: Private stal
+choice.type.stable: Recreatiestal

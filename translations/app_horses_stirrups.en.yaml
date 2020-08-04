@@ -1,0 +1,8 @@
+# horses-stirrups
+title.stirrups: Stirrups
+
+entity.verbose: Stirrup settings
+entity.verbose_plural: Stirrup settings
+
+label.stirrup_left: Left
+label.stirrup_right: Right

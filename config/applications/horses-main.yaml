@@ -1,0 +1,237 @@
+# reference value
+application:
+    name: horses
+    category: horses
+    routes:
+        en: horses
+        nl: paarden
+
+
+    # symfony style form definition
+    #   input identifier => config
+    fields:
+        photo:
+            type: image
+            required: false
+            default: ~
+            # allow specifying field type with configuration
+            _configuration:
+                max_file_size: 500k
+        status:
+            type: boolean
+            pointer:
+                fields: [injured, date_of_death]
+                type: external
+            detail: false
+            dashboard:
+                visibility: detail
+            public: true
+        stables:
+            type: choice
+            source: stables.name
+            required: true
+            dashboard:
+                visibility: large
+        name:
+            type: text
+            unique: true
+            required: true
+        gender:
+            type: choice
+            options: [ mare, gelding, stallion ]
+            required: true
+            _configuration:
+                icons:
+                -   value: stallion
+                    icon: fa-gender-m
+                -   value: mare
+                    icon: fa-gender-f
+                -   value: gelding
+                    icon: fa-gender-o
+        type:
+            type: text
+            label: Class
+            pointer:
+                fields: height
+                type: external
+            dashboard:
+                visibility: detail
+        discipline:
+            type: choice
+            # multi select
+            multiple: true
+            options: [ dressage, jump, carrousel, western, voltige, combined, therapy ]
+            default: [0]
+            required: true
+            # non-sf configuration
+            _configuration:
+                # render an 'all' button to select all children
+                trigger_all: true
+            dashboard:
+                visibility: detail
+        height:
+            type: number
+            dashboard: false
+            _transform:
+                number:
+                    suffix: cm
+        date_of_birth:
+            type: date
+            label: Birth
+            format: ddMMyyyy
+            year_min: 45
+            year_max: 0
+            required: false
+            public: false # fixme: temporary fix to let plugin work
+            dashboard: false
+        date_of_death:
+            type: date
+            label: Death
+            format: ddMMyyyy
+            year_min: 45
+            year_max: 0
+            default: ~
+            required: false
+            public: false # fixme: temporary fix to let plugin work
+            dashboard: false
+        age:
+            type: text
+            ignored: true
+            pointer:
+                fields: [ date_of_birth, date_of_death ]
+                type: external
+            _transform:
+                date: true
+            dashboard:
+                visibility: large
+            public: true
+        behaviour_stable:
+            type: choice
+            options: [ alert, kind, curious, grumpy, sweet, cuddle, calm, unstable, aggressive ]
+            multiple: true
+            required: false
+            dashboard: false
+            public: false
+        behaviour_riding:
+            type: choice
+            options: [ sensitive, insensitive, unstable, passive, fast, active, calm, jumpy, bucking, deep, supple, fiery, eager ]
+            multiple: true
+            required: false
+            public: false
+            dashboard:
+                visibility: detail
+        dominance:
+            type: choice
+            options: [ passive, regular, dominant, diva ]
+            dashboard:
+                visibility: detail
+            required: true
+            public: false
+        comment:
+            type: text
+            maxlength: 250
+            public: false
+            dashboard:
+                visibility: detail
+        injured:
+            type: boolean
+            dashboard: false
+            public: true # fixme: temporary fix to let plugin work
+        rides:
+            type: number
+            source: count_rides
+            dashboard:
+                visibility: desktop
+        whip:
+            type: choice
+            options: [none, short, long]
+            dashboard:
+                visibility: large
+        stirrup_left:
+            type: number
+            min: 1
+            max: 20
+            required: false
+            dashboard:
+                visibility: detail
+        stirrup_right:
+            type: number
+            min: 1
+            max: 20
+            required: false
+            dashboard:
+                visibility: detail
+
+    schema:
+        symlink:
+            name:
+                column: slug
+                filter: slugify
+
+    # Django style meta configuration for model
+    meta:
+        # primary identifier when used in other applications
+        # and detail pages
+        slug: [stables, name]
+        exposes: name
+        verbose_name: Horse
+        verbose_name_plural: Horses
+
+    sources:
+        stables:
+            application: horses-stables
+        count_rides:
+            application: horse-riding-log
+            function: count # function precedes fields
+            pointer: dashboard # preferred position for pointer config
+#        stirrups:
+#            application: horses-stirrups
+#            invert_join: true
+#            fields: [stirrup_left, stirrup_right]
+
+    modules:
+        detail:
+            param: name # todo
+            public: false
+
+    # show links to other application route
+    pointers:
+        # unique identifier within the config
+        logs:
+            application: horse-riding-log
+            param: name
+            label: Show rides
+        stirrups:
+            application: horse-stirrups
+            param: name
+            label: Stirrups length
+
+    # rudimentary design document describing placement
+    # by field or string 'style'
+    #  design:
+    #    # differentiate between main page and detail page
+    #    view:
+    #      main: table
+    #      detail: side-by-side
+    #    edit: # ignored until later development stage
+    #      default: side-by-side
+    #      small: stacked
+    #    # design for public dashboard
+    #    dashboard:
+    #        style: banner
+    #        label: Horses
+    #        color: "#432710"
+    #        image:
+    #          path: images/apps/banner/horse.png
+    #          align: left bottom
+    links:
+    -   application: horse-rides-log
+        module: charts
+        label: charts
+
+    # fields used in searches
+    search:
+    - name
+    - discipline
+    - character
+    - comment

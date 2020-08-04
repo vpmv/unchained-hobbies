@@ -1,0 +1,86 @@
+categories:
+  cooking:
+    routes:
+      en: cooking
+      nl: koken
+    public: true
+  horses:
+    routes:
+      en: horse-riding
+      nl: paardrijden
+    public: true
+
+applications:
+#  horses-stirrups:
+#    routes:
+#      en: stirrups
+#      nl: beugels
+#    public: true
+#    order: 11
+
+  horse-riding-log:
+    routes:
+      en: rides
+      nl: log
+    public: false
+    order: 3
+
+  horse-riding-events:
+    routes:
+      en: events
+      nl: wedstrijden
+    public: true
+    order: 4
+
+  horses-riders:
+    label: Riders
+    routes:
+      en: riders
+      nl: ruiters
+    public: false
+    order: 5
+
+  horse-riding-instructors:
+    routes:
+      en: instructors
+      nl: instructeurs
+    public: false
+    order: 5
+
+
+  horses-stables:
+    label: Stables
+    routes:
+      en: stables
+      nl: maneges
+    public: false
+    order: 10
+
+  horses-main:
+    label: Horses
+    routes:
+      en: horses
+      nl: paarden
+    public: true
+    order: 0
+
+  horses-gear:
+    routes:
+      en: gear
+      nl: uitrusting
+    public: false
+    order: 99
+
+  cooking:
+    label: Cooking
+    routes:
+      en: recipes
+      nl: recepten
+    public: true
+    order: -1
+
+#  tasker:
+#    routes:
+#     en: tasker
+#     nl: tasker
+#    public: false
