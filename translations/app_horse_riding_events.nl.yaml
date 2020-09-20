@@ -12,6 +12,7 @@ label.location: Locatie
 label.exercise: Oefening
 label.description: Omschrijving
 label.type: Soort
+label.jury: Jury
 label.starting_position: Startpositie
 label.result: Geslaagd
 label.result.enabled: Geslaagd
