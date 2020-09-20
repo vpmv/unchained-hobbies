@@ -54,6 +54,8 @@ application:
         description:
             type: textbox
             dashboard: false
+        jury:
+            type: text
         starting_position:
             type: number
             dashboard:

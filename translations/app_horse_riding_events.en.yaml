@@ -12,6 +12,7 @@ label.location: Location
 label.exercise: Exercise
 label.description: Description
 label.type: Type
+label.jury: Jury
 label.starting_position: Starting pos.
 label.result: Result
 label.result.enabled: Passed
