@@ -4,6 +4,9 @@ category.horses.description: Overview & logs
 title.category.cooking: Cooking
 category.cooking.description: Fav. recipes
 
+title.category.entertainment: Entertainment
+category.entertainment.description: Movies & Series
+
 text.dashboard.empty.verbose: "No known verbose"
 action.entity.create.verbose: "Create verbose"
 text.entity.create.verbose: Create

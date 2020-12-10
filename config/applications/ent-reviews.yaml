@@ -1,0 +1,94 @@
+# reference value
+application:
+    category: entertainment
+    routes:
+        en: reviews
+        nl: reviews
+
+    # symfony style form definition
+    #   input identifier => config
+    fields:
+        date:
+            type: date
+            format: ddMMyyyy
+            year_max: 1
+            required: true
+            default: today
+        name:
+            type: text
+            required: true
+        type:
+            type: boolean
+            default: 0
+            public: true
+            dashboard:
+                visibility: detail
+        kind:
+            type: choice
+            options:
+                - anime
+                - western_cartoon
+                - animation
+                - irl
+            required: true
+            dashboard:
+                visibility: large
+        genre:
+            type: text
+            required: false
+            dashboard:
+                visibility: detail
+        source:
+            type: choice
+            options:
+                - netflix
+                - disney
+                - prime
+                - tv
+                - disk
+                - other
+            required: true
+            dashboard:
+                visibility: detail
+        description:
+            type: textbox
+            required: false
+            dashboard:
+                visibility: detail
+        best_scenes:
+            type: textbox
+            required: false
+            dashboard:
+                visibility: detail
+        review:
+            type: textbox
+            required: true
+            dashboard:
+                visibility: large
+        score:
+            type: rating # fixme: new type rating/range
+            options: [ 1,2,3,4,5 ]
+            default: 2 # => 3
+        actors:
+            type: text
+            required: false
+            dashboard:
+                visibility: detail
+        staff:
+            type: text
+            required: false
+            dashboard:
+                visibility: detail
+        link:
+            type: url
+            required: false
+
+    # Django style meta configuration for model
+    meta:
+        # primary identifier when used in other applications
+        # and detail pages
+        exposes: [name, kind, type]
+
+    modules:
+        dashboard:
+            sort: [name, type, kind]

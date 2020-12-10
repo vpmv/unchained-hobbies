@@ -1,0 +1,37 @@
+title.ent-reviews: Watchlist
+entity.verbose: Review
+entity.verbose_plural: Reviews
+
+choice.kind.anime: Anime
+choice.kind.western_cartoon: Tekenfilm
+choice.kind.animation: Animatie
+choice.kind.irl: Echte mensen
+
+choice.source.netflix: Netflix
+choice.source.prime: Amazon Prime
+choice.source.disney: Disney
+choice.source.disk: BR/DVD
+choice.source.tv: TV
+choice.source.other: Anders
+
+choice.score.1: 1
+choice.score.2: 2
+choice.score.3: 3
+choice.score.4: 4
+choice.score.5: 5
+
+label.date: Datum
+label.type: Type
+label.kind: Soort
+label.genre: Genre
+label.source: Bron
+label.description: Omschr.
+label.best_scenes: Memorabele momenten
+label.review: Slechte review
+label.score: Score
+label.actors: Acteurs
+label.staff: Medewerkers
+label.link: URL
+
+label.type.enabled: Film
+label.type.disabled: Serie

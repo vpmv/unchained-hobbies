@@ -4,6 +4,9 @@ category.horses.description: Logboek & overzicht
 title.category.cooking: Koken
 category.cooking.description: Fav. recepten & inventaris
 
+title.category.entertainment: Entertainment
+category.entertainment.description: Films & series
+
 text.dashboard.empty.verbose: "Geen verbose bekend"
 action.entity.create.verbose: "verbose aanmaken"
 text.entity.create.verbose: Aanmaken

@@ -9,6 +9,11 @@ categories:
       en: horse-riding
       nl: paardrijden
     public: true
+  entertainment:
+    routes:
+      en: entertainment
+      nl: entertainment
+    public: true
 
 applications:
 #  horses-stirrups:
@@ -78,6 +83,14 @@ applications:
       nl: recepten
     public: true
     order: -1
+
+  ent-reviews:
+    label: Shitty Reviews
+    routes:
+      en: bad-reviews
+      nl: bad-reviews
+    public: true
+    order: 0
 
 #  tasker:
 #    routes:

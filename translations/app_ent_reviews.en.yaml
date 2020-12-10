@@ -1,0 +1,37 @@
+title.ent-reviews: Watchlist
+entity.verbose: Review
+entity.verbose_plural: Reviews
+
+choice.kind.anime: Anime
+choice.kind.western_cartoon: Cartoon
+choice.kind.animation: Animation
+choice.kind.irl: Real life
+
+choice.source.netflix: Netflix
+choice.source.prime: Amazon Prime
+choice.source.disney: Disney
+choice.source.disk: BR/DVD
+choice.source.tv: TV
+choice.source.other: Other
+
+choice.score.1: 1
+choice.score.2: 2
+choice.score.3: 3
+choice.score.4: 4
+choice.score.5: 5
+
+label.date: Date
+label.type: Type
+label.kind: Kind
+label.genre: Genre
+label.source: Source
+label.description: Desc.
+label.best_scenes: Memorable moments
+label.review: Shitty review
+label.score: Score
+label.actors: Known actors
+label.staff: Notable staff
+label.link: URL
+
+label.type.enabled: Movie
+label.type.disabled: Series
