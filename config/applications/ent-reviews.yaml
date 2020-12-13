@@ -17,12 +17,6 @@ application:
         name:
             type: text
             required: true
-        type:
-            type: boolean
-            default: 0
-            public: true
-            dashboard:
-                visibility: detail
         kind:
             type: choice
             options:
@@ -33,6 +27,12 @@ application:
             required: true
             dashboard:
                 visibility: large
+        type:
+            type: boolean
+            default: 0
+            public: true
+#            dashboard:
+#                visibility: detail
         genre:
             type: text
             required: false
@@ -69,6 +69,22 @@ application:
             type: rating # fixme: new type rating/range
             options: [ 1,2,3,4,5 ]
             default: 2 # => 3
+        completed:
+            type: boolean
+            default: 1
+            dashboard:
+                visibility: large
+        times_seen:
+            type: number
+            min: 1
+            default: 1
+            dashboard:
+                visibility: detail
+        binge_material:
+            type: boolean
+            dashboard:
+                visibility: detail
+            default: 0
         actors:
             type: text
             required: false
@@ -82,6 +98,8 @@ application:
         link:
             type: url
             required: false
+            dashboard:
+                visibility: detail
 
     # Django style meta configuration for model
     meta:

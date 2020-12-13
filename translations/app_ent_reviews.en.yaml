@@ -21,7 +21,7 @@ choice.score.4: 4
 choice.score.5: 5
 
 label.date: Date
-label.type: Type
+label.type: Movie
 label.kind: Kind
 label.genre: Genre
 label.source: Source
@@ -29,9 +29,16 @@ label.description: Desc.
 label.best_scenes: Memorable moments
 label.review: Shitty review
 label.score: Score
+label.times_seen: Times seen
+label.completed: Done
+label.binge_material: Binge-able
 label.actors: Known actors
 label.staff: Notable staff
 label.link: URL
 
 label.type.enabled: Movie
 label.type.disabled: Series
+label.completed.enabled: Completed
+label.completed.disabled: Partly seen
+label.binge_material.enabled: Binge material
+label.binge_material.disabled: One at a time

@@ -21,7 +21,7 @@ choice.score.4: 4
 choice.score.5: 5
 
 label.date: Datum
-label.type: Type
+label.type: Film
 label.kind: Soort
 label.genre: Genre
 label.source: Bron
@@ -29,9 +29,16 @@ label.description: Omschr.
 label.best_scenes: Memorabele momenten
 label.review: Slechte review
 label.score: Score
+label.times_seen: Keer gezien
+label.completed: Klaar
+label.binge_material: Te bingen
 label.actors: Acteurs
 label.staff: Medewerkers
 label.link: URL
 
 label.type.enabled: Film
 label.type.disabled: Serie
+label.completed.enabled: Voltooid
+label.completed.disabled: Deels gezien
+label.binge_material.enabled: Binge materiaal
+label.binge_material.disabled: Een tegelijk
