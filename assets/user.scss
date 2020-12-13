@@ -38,6 +38,19 @@
         }
     }
 
+    &.cat-entertainment {
+        a.cat {
+            background: #333 url('images/entertainment.jpg') center center;
+            background-size: cover;
+        }
+    }
+    &.app-ent-reviews {
+        a.app {
+            background: #bf583c url('images/popcorn.jpg') center center;
+            background-size: cover;
+        }
+    }
+
     // HORSES
     &.app-horses-main {
         a.app {
