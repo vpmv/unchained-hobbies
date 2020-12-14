@@ -59,7 +59,7 @@ application:
             multiple: true
             public: false
             dashboard:
-                visibility: large
+                visibility: desktop
         discipline:
             type: choice
             options: [ dressage, jump, carrousel, western, voltige, discipline_other ]
@@ -79,7 +79,7 @@ application:
             type: text
             public: false
             dashboard:
-                visibility: desktop
+                visibility: detail
         rating_ride:
             type: rating # fixme: new type rating/range
             options: [ 1,2,3,4,5 ]
@@ -94,7 +94,7 @@ application:
             default: 2 # => 3
             public: false
             dashboard:
-                visibility: large
+                visibility: detail
         rating_instructions:
             type: rating # fixme: new type rating/range
             options: [ 1,2,3,4,5 ]
@@ -109,6 +109,8 @@ application:
             multiple: true
             required: false
             public: false
+            dashboard:
+                visibility: detail
         comment:
             type: text
             maxlength: 250
