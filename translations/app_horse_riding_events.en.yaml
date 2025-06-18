@@ -14,6 +14,7 @@ label.description: Description
 label.type: Type
 label.jury: Jury
 label.starting_position: Starting pos.
+label.contestants_total: No. of contestants
 label.result: Result
 label.result.enabled: Passed
 label.result.disabled: Not passed

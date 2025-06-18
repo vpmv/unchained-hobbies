@@ -14,6 +14,7 @@ label.description: Omschrijving
 label.type: Soort
 label.jury: Jury
 label.starting_position: Startpositie
+label.contestants_total: Aantal deelnemers
 label.result: Geslaagd
 label.result.enabled: Geslaagd
 label.result.disabled: Niet behaald

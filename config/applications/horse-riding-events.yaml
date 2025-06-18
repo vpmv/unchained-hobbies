@@ -60,6 +60,10 @@ application:
             type: number
             dashboard:
                 visibility: detail
+        contestants_total:
+            type: number
+            dashboard:
+                visibility: detail
         result:
             type: boolean
             default: 0
