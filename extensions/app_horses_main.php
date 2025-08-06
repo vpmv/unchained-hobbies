@@ -1,12 +1,13 @@
 <?php
 
-require_once 'apps.php';
 
 class HorsesMain implements \App\System\Constructs\UserExtensionInterface
 {
+    use \App\System\Helpers\DateTransformerTrait;
+
     public static function transformAge(array $context)
     {
-        return _yearsSince($context['date_of_birth'] ?? null, $context['date_of_death'] ?? null);
+        return self::timeAgo($context['date_of_birth'] ?? null, $context['date_of_death'] ?? null);
     }
 
     public static function transformType(array $context)

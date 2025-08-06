@@ -1,0 +1,17 @@
+# reference value
+application:
+    name: tasks
+
+    # symfony style form definition
+    #   input identifier => config
+    fields:
+        name:
+            type: text
+            required: true
+        duedate:
+            type: date
+
+    modules:
+        dashboard:
+            sort:
+                duedate: asc

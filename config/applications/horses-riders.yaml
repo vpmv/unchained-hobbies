@@ -28,6 +28,16 @@ application:
     surname:
       type: text
       required: false
+    #shorthand:
+    #  type: text
+    #  ignored: true
+    #  pointer:
+    #    fields: [name, surname]
+    #  _transform:
+    #    text:
+    #      abbr: true
+    #  #dashboard: false
+    #  #detail: false
     gender:
       type: choice
       options: [ male, female ]
@@ -50,8 +60,7 @@ application:
       _transform:
         date:
           round_to: year
-      dashboard:
-        visibility: large
+      dashboard: large
     height:
       type: number
       _transform:
@@ -75,7 +84,7 @@ application:
       year_max: 0
       required: false
       public: false
-      dashboard: false
+      dashboard: detail
     date_stopped:
       type: date
       format: ddMMyyyy
@@ -83,11 +92,19 @@ application:
       year_max: 5
       required: false
       public: false
-      dashboard: false
+      dashboard: detail
+    date_first_lesson:
+      source: first_seen
+      public: false
+      dashboard: detail
+    date_last_lesson:
+      source: last_seen
+      public: false
+      dashboard: detail
     experience:
       type: text
       pointer:
-        fields: [date_started, date_stopped]
+        fields: [date_started, date_stopped, date_first_lesson, date_last_lesson]
         type: external
       dashboard:
         visibility: large
@@ -128,6 +145,16 @@ application:
         visibility: large
 
   sources:
+    first_seen:
+      application: horse-riding-log
+      function: find_in_min
+      field: date
+      invert_join: true
+    last_seen:
+      application: horse-riding-log
+      function: find_in_max
+      field: date
+      invert_join: true
     stables:
       application: horses-stables
     count_rides:
@@ -139,10 +166,11 @@ application:
   # Django style meta configuration for model
   meta:
     exposes: [name, surname]
+    slug: [name, surname]
+    sort:
+      surname: asc
+      name: asc
 
-  sort:
-    surname: asc
-    name: asc
 
   modules:
     detail:

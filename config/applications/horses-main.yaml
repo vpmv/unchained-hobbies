@@ -82,7 +82,7 @@ application:
             year_min: 45
             year_max: 0
             required: false
-            public: false # fixme: temporary fix to let plugin work
+            public: false
             dashboard: false
         date_of_death:
             type: date
@@ -92,7 +92,7 @@ application:
             year_max: 0
             default: ~
             required: false
-            public: false # fixme: temporary fix to let plugin work
+            public: false
             dashboard: false
         age:
             type: text
@@ -136,12 +136,21 @@ application:
         injured:
             type: boolean
             dashboard: false
-            public: true # fixme: temporary fix to let plugin work
+            public: false
         rides:
             type: number
             source: count_rides
             dashboard:
                 visibility: desktop
+        average:
+            label: average score
+            source: avg_score
+            public: false
+            type: number
+            _transform:
+                number:
+                    round: true
+                    round_precision: 1
         whip:
             type: choice
             options: [none, short, long]
@@ -173,9 +182,9 @@ application:
         # primary identifier when used in other applications
         # and detail pages
         slug: [stables, name]
-        exposes: name
-        verbose_name: Horse
-        verbose_name_plural: Horses
+        exposes: [name]
+        sort: [stables, name]
+        icon: fa fa-horse-head
 
     sources:
         stables:
@@ -184,6 +193,11 @@ application:
             application: horse-riding-log
             function: count # function precedes fields
             pointer: dashboard # preferred position for pointer config
+        avg_score:
+            application: horse-riding-log
+            function: avg
+            invert_join: true
+            field: rating_ride
 #        stirrups:
 #            application: horses-stirrups
 #            invert_join: true

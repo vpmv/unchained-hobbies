@@ -1,0 +1,38 @@
+# Unchained configuration
+# changes to this configuration require a "refresh"
+config:
+  # Unchained title
+  title: Journal
+#  title_icon: bi bi-journal-richtext
+  theme: dark
+  # List of supported locales for your app
+  # The list will be presented in this order
+  locales: [nl, en]
+  # Default locale (optional)
+  #locale: en
+
+  # Dashboard
+  dashboard:
+    # Application overview style (default (buttons) / block (decorative blocks))
+    style: block
+    # Show categories with respective apps on main dashboard
+    show_app_stack: false
+    # Show count widget
+    show_count: true
+    # Show application image (/assets/images/design/<appID>.jpg)
+    # Only for style "block"
+    app_block_image: false
+
+  # Navigation
+  navigation:
+    # Navigation style: default (top) / side (offcanvas)
+    style: top
+    # Show navigation button "Home"
+    show_home: false
+    # Home icon: e.g. "⌂ Home"
+    # use ~ (tilde) to disable
+    home_icon: fa fa-home
+    # Home button icon instead of label "Home"
+    home_icon_only: false
+    # Show quicklinks to jump to create record screen
+    show_quicklinks: true

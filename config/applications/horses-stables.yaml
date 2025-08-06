@@ -1,11 +1,6 @@
 # reference value
 application:
     name: riding_schools
-    category: horses
-    routes:
-        en: stables
-        nl: maneges
-
 
     fields:
         photo:
@@ -74,11 +69,11 @@ application:
             source: count_instructors
             dashboard:
                 visibility: large
-#        rides:
-#            type: number
-#            source: count_rides
-#            dashboard:
-#                visibility: detail
+        rides:
+            type: number
+            source: count_rides
+            dashboard:
+                visibility: detail
 
     schema:
         symlink:
@@ -86,10 +81,7 @@ application:
                 column: slug
                 filter: slugify
 
-    # Django style meta configuration for model
     meta:
-        # primary identifier when used in other applications
-        # and detail pages
         exposes: name
 
     sources:
@@ -100,10 +92,9 @@ application:
         count_instructors:
             application: horse-riding-instructors
             function: count
-#        count_rides:
-#            application: horse-riding-log
-#            join_source: horses
-#            function: count
+        count_rides:
+            application: horse-riding-log
+            function: count
 
     modules:
         detail:

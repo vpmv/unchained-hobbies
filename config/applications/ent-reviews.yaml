@@ -1,4 +1,3 @@
-# reference value
 application:
     category: entertainment
     routes:
@@ -68,9 +67,9 @@ application:
             dashboard:
                 visibility: large
         score:
-            type: rating # fixme: new type rating/range
-            options: [ 1,2,3,4,5 ]
-            default: 2 # => 3
+            type: rating
+            options: [ 1, 5 ]
+            default: 3
         completed:
             type: boolean
             default: 1
@@ -108,6 +107,7 @@ application:
         # primary identifier when used in other applications
         # and detail pages
         exposes: [name, kind, type]
+        icon: fa fa-film
 
     modules:
         dashboard:

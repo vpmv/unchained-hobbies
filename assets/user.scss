@@ -1,51 +1,21 @@
-
+// User styling
 .app-block, .cat-block {
-    overflow: hidden;
-    margin-bottom: 1rem;
-
-    a.app, a.cat {
-        display: block;
-        position: relative;
-        height: 15rem;
-        background: #1d2124;
-
-        .title {
-            position: absolute;
-            font-size: 3.7rem;
-            color: #fff;
-            bottom: 0;
-            font-variant: all-small-caps;
-            font-weight: bold;
-            height: 3rem;
-            line-height: 2rem;
-            text-shadow: -1px -1px 6px #333;
-
-            &::first-letter {
-                font-weight: bold;
-                font-size: 1.6em;
-            }
-        }
-    }
-    &.app-wide .title {
-        right: 0.2rem;
-    }
-
 
     &.app-cooking, &.cat-cooking {
-        a.app, a.cat {
+        .app, .cat {
             background: #783e03 url('images/cooking_sm.jpg') center center;
             background-size: cover;
         }
     }
 
     &.cat-entertainment {
-        a.cat {
+        .cat {
             background: #333 url('images/entertainment.jpg') center center;
             background-size: cover;
         }
     }
     &.app-ent-reviews {
-        a.app {
+        .app {
             background: #bf583c url('images/popcorn.jpg') center center;
             background-size: cover;
         }
@@ -53,46 +23,46 @@
 
     // HORSES
     &.app-horses-main {
-        a.app {
+        .app {
             background: #1D5A2D url('images/horses_wild.jpg') center center;
             background-size: cover;
         }
     }
     &.app-horses-stirrups {
-        a.app {
+        .app {
             background: #4f270d url('images/horse_riding4.jpg') bottom right;
             background-size: 175%;
         }
     }
 
     &.app-horse-riding-log {
-        a.app {
+        .app {
             background: #5A2949 url('images/horse_closeup3.jpg') center left;
             background-size: cover;
         }
     }
     &.app-horse-riding-instructors {
-        a.app {
+        .app {
             background: #23316F url('images/horse_instructor.jpg') center right;
             background-size: cover;
         }
     }
     &.app-horses-riders, &.cat-horses {
-        a.app, a.cat {
+        .app, .cat {
             background: #4f270d url('images/horse_riding.jpg') center center;
             background-size: cover;
         }
     }
 
     &.app-horses-stables {
-        a.app {
+        .app {
             background: #250D09 url('images/riding_school.jpg') center center;
             background-size: cover;
         }
     }
 
     &.app-horse-riding-events {
-        a.app {
+        .app {
             background: #333 url('images/horse_riding_competition.jpg') center right;
             background-size: cover;
         }

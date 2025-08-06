@@ -94,6 +94,7 @@ application:
 
     meta:
         exposes: exercise
+        icon: fa fa-trophy
 
 #    modules:
 #        detail: false
