@@ -43,11 +43,11 @@ application:
             _configuration:
                 icons:
                 -   value: stallion
-                    icon: fa-gender-m
+                    icon: fa-mars
                 -   value: mare
-                    icon: fa-gender-f
+                    icon: fa-venus
                 -   value: gelding
-                    icon: fa-gender-o
+                    icon: fa-neuter
         type:
             type: text
             label: Class
@@ -141,11 +141,12 @@ application:
             type: number
             source: count_rides
             dashboard:
-                visibility: desktop
+                visibility: large
         average:
             label: average score
             source: avg_score
             public: false
+            dashboard: large
             type: number
             _transform:
                 number:
@@ -155,7 +156,7 @@ application:
             type: choice
             options: [none, short, long]
             dashboard:
-                visibility: large
+                visibility: detail
         stirrup_left:
             type: number
             min: 1
@@ -184,7 +185,7 @@ application:
         slug: [stables, name]
         exposes: [name]
         sort: [stables, name]
-        icon: fa fa-horse-head
+        icon: fa-solid fa-horse-head
 
     sources:
         stables:

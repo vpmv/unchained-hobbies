@@ -12,7 +12,7 @@ categories:
   entertainment:
     routes:
       en: entertainment
-      nl: entertainment
+      nl: vrije-tijd
     public: true
 
 applications:
@@ -23,6 +23,7 @@ applications:
       nl: log
     public: false
     order: 3
+    deactivate: false
 
   horse-riding-events:
     category: horses
@@ -51,7 +52,6 @@ applications:
 
   horses-stables:
     category: horses
-    label: Stables
     routes:
       en: stables
       nl: maneges
@@ -60,7 +60,6 @@ applications:
 
   horses-main:
     category: horses
-    label: Horses
     routes:
       en: horses
       nl: paarden
@@ -77,7 +76,6 @@ applications:
 
   cooking:
     category: cooking
-    label: Cooking
     routes:
       en: recipes
       nl: recepten
@@ -86,7 +84,6 @@ applications:
 
   ent-reviews:
     category: entertainment
-    label: Shitty Reviews
     routes:
       en: bad-reviews
       nl: reviews

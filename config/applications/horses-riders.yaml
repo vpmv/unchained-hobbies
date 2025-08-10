@@ -32,12 +32,12 @@ application:
     #  type: text
     #  ignored: true
     #  pointer:
-    #    fields: [name, surname]
+    #    fields: [surname]
     #  _transform:
     #    text:
     #      abbr: true
-    #  #dashboard: false
-    #  #detail: false
+      #dashboard: true
+      #detail: false
     gender:
       type: choice
       options: [ male, female ]
@@ -45,9 +45,9 @@ application:
       _configuration:
         icons:
         - value: man
-          icon: fa-gender-m
+          icon: fa-mars
         - value: woman
-          icon: fa-gender-f
+          icon: fa-venus
       dashboard:
         visibility: detail
     date_of_birth:

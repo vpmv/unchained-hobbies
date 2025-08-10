@@ -55,6 +55,7 @@ text.entity.edit.verbose: Bewerken
 
 dialog.delete_warning: Weet je zeker dat je dit wil verwijderen?
 
+label.actions: Acties
 label.new: Nieuw
 label.details: Details
 label.edit: Bewerk
@@ -65,6 +66,8 @@ label.back: Terug
 label.overview: Overzicht
 label.select...: Maak een keuze...
 Select...: Maak een keuze...
+label.activate: Activeren
+label.deactivate: Deactiveren
 
 label.photo: Foto
 label.type: Soort

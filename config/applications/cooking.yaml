@@ -61,7 +61,7 @@ application:
         # primary identifier when used in other applications
         # and detail pages
         exposes: [name, source]
-        icon: fa fa-cookie
+        icon: fa-solid fa-kitchen-set
 
     modules:
         dashboard:

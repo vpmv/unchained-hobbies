@@ -13,7 +13,7 @@ config:
 
   # Dashboard
   dashboard:
-    # Application overview style (default (buttons) / block (decorative blocks))
+    # Application overview style (default (textual) / block (decorative blocks))
     style: block
     # Show categories with respective apps on main dashboard
     show_app_stack: false
@@ -23,6 +23,10 @@ config:
     # Only for style "block"
     app_block_image: false
 
+    # Show inactive records to the public
+    # They're always visible when logged in
+    show_inactive: true
+
   # Navigation
   navigation:
     # Navigation style: default (top) / side (offcanvas)
@@ -31,7 +35,7 @@ config:
     show_home: false
     # Home icon: e.g. "⌂ Home"
     # use ~ (tilde) to disable
-    home_icon: fa fa-home
+    home_icon: fa-solid fa-house
     # Home button icon instead of label "Home"
     home_icon_only: false
     # Show quicklinks to jump to create record screen

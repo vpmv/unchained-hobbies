@@ -107,7 +107,7 @@ application:
         # primary identifier when used in other applications
         # and detail pages
         exposes: [name, kind, type]
-        icon: fa fa-film
+        icon: fa-solid fa-film
 
     modules:
         dashboard:

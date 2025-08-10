@@ -56,6 +56,7 @@ application:
             dashboard: false
         jury:
             type: text
+            dashboard: large
         starting_position:
             type: number
             dashboard:
@@ -94,7 +95,7 @@ application:
 
     meta:
         exposes: exercise
-        icon: fa fa-trophy
+        icon: fa-solid fa-award
 
 #    modules:
 #        detail: false

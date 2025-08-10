@@ -1,7 +1,6 @@
 # reference value
 application:
     name: horse riding log
-    title: Riding Log
 
     # symfony style form definition
     #   input identifier => config
@@ -46,7 +45,9 @@ application:
             dashboard:
                 visibility: large
         riders:
-            source: riders
+            source: riders.name
+                #source: riders
+                #fields: [name, shorthand] # todo: virtual column
             required: false
             multiple: true
             public: false
@@ -131,4 +132,5 @@ application:
         exposes: [date, time]
         sort:
             date: desc
+            time: desc
 
