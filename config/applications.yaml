@@ -12,25 +12,21 @@ categories:
   entertainment:
     routes:
       en: entertainment
-      nl: entertainment
+      nl: vrije-tijd
     public: true
 
 applications:
-#  horses-stirrups:
-#    routes:
-#      en: stirrups
-#      nl: beugels
-#    public: true
-#    order: 11
-
   horse-riding-log:
+    category: horses
     routes:
       en: rides
       nl: log
     public: false
     order: 3
+    deactivate: false
 
   horse-riding-events:
+    category: horses
     routes:
       en: events
       nl: wedstrijden
@@ -38,7 +34,7 @@ applications:
     order: 4
 
   horses-riders:
-    label: Riders
+    category: horses
     routes:
       en: riders
       nl: ruiters
@@ -46,6 +42,7 @@ applications:
     order: 5
 
   horse-riding-instructors:
+    category: horses
     routes:
       en: instructors
       nl: instructeurs
@@ -54,7 +51,7 @@ applications:
 
 
   horses-stables:
-    label: Stables
+    category: horses
     routes:
       en: stables
       nl: maneges
@@ -62,7 +59,7 @@ applications:
     order: 10
 
   horses-main:
-    label: Horses
+    category: horses
     routes:
       en: horses
       nl: paarden
@@ -70,6 +67,7 @@ applications:
     order: 0
 
   horses-gear:
+    category: horses
     routes:
       en: gear
       nl: uitrusting
@@ -77,7 +75,7 @@ applications:
     order: 99
 
   cooking:
-    label: Cooking
+    category: cooking
     routes:
       en: recipes
       nl: recepten
@@ -85,15 +83,15 @@ applications:
     order: -1
 
   ent-reviews:
-    label: Shitty Reviews
+    category: entertainment
     routes:
       en: bad-reviews
-      nl: bad-reviews
+      nl: reviews
     public: true
     order: 0
 
-#  tasker:
-#    routes:
-#     en: tasker
-#     nl: tasker
-#    public: false
+  #tasks:
+  #  routes:
+  #   en: tasker
+  #   nl: tasker
+  #  public: false

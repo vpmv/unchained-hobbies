@@ -1,0 +1,18 @@
+title.horses-gear: Uitrusting
+
+entity.verbose: Uitrusting
+entity.verbose_plural: Uitrusting
+
+label.brand: Merk
+label.color: Kleur
+label.date_purchased: Aankoopdatum
+label.count: Gebruikt
+label.last_used: Laatst gebruikt
+
+choice.type.pants: Broek
+choice.type.tops: Top
+choice.type.undergarment: Ondergoed
+choice.type.boots: Laarzen
+choice.type.riding gear: Uitrusting
+choice.type.accessories: Accessoires
+

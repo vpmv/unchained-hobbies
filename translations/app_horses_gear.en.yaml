@@ -9,9 +9,6 @@ label.date_purchased: Buying date
 label.count: Uses
 label.last_used: Last used
 
-label.private.enabled: Private
-label.private.disabled: Group
-
 choice.type.pants: Pants
 choice.type.tops: Tops
 choice.type.undergarment: Undergarment

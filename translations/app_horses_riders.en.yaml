@@ -19,6 +19,8 @@ label.date_stopped: Stopped
 label.experience: Experience
 label.riding_level: Level
 label.count_rides: Rides
+label.date_first_lesson: First lesson
+label.date_last_lesson: Last lesson
 
 choice.handicap.autism: A.S.S.
 choice.handicap.hearing: Hearing/deaf

@@ -19,6 +19,8 @@ label.date_stopped: Gestopt
 label.experience: Rijervaring
 label.riding_level: Niveau
 label.count_rides: Ritten
+label.date_first_lesson: Eerste les
+label.date_last_lesson: Laatste les
 
 choice.handicap.autism: A.S.S.
 choice.handicap.hearing: Gehoor/doof

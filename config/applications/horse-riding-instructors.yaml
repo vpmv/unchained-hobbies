@@ -1,10 +1,5 @@
 application:
     name: riding instructors
-    category: horses
-    routes:
-        en: instructors
-        nl: instructeurs
-
 
     fields:
         photo:
@@ -23,19 +18,24 @@ application:
             source: rides
             type: number
             required: true
-            ignored: true #todo
+        average:
+            label: average score
+            source: avg_score
+            type: number
+            dashboard: large
+            _transform:
+                number:
+                    round: true
+                    round_precision: 1
 
     modules:
       detail:
         enabled: false
 
-    sort:
-        - name
 
     meta:
         exposes: name
-        verbose_name: Instructor
-        verbose_name_plural: Instructors
+        sort: [stables, name]
 
     sources:
         stables:
@@ -44,3 +44,9 @@ application:
             application: horse-riding-log
             function: count
             link: dashboard
+        avg_score:
+            application: horse-riding-log
+            function: avg
+            field: rating_instructions
+            invert_join: true
+

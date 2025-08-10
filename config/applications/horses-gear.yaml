@@ -25,9 +25,8 @@ application:
         count:
             type: number
             source: count_used
-#        last_used:
-#            source: date_used.date
-#            ignored: true
+        last_used:
+            source: date_used
 
     sources:
         count_used:
@@ -37,13 +36,11 @@ application:
             application: horse-riding-log
             function: find_in_max
             invert_join: true
-            fields: [date] # fixme
+            field: date
 
     modules:
         detail:
             enabled: false
-        dashboard:
-            sort: [horse]
 
     meta:
         exposes: [brand,name,color]

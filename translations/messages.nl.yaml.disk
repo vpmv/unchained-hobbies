@@ -7,8 +7,6 @@ category.cooking.description: Fav. recepten & inventaris
 title.category.entertainment: Vrije tijd
 category.entertainment.description: Films & series
 
-label.average: Gemiddelde
-label.average_score: Gem. score
 label.horse: Paard
 label.horses: Paarden
 label.discipline: Discipline
@@ -41,33 +39,16 @@ pension_stables: Pensionstalling
 pension_stables_false: Geen pensionstalling
 pension_stables_true: Heeft pensionstalling
 
-
-### Default translations
-
-theme.light: Lichte modus
-theme.dark: Donkere modus
-theme.auto: Automatisch
-
-text.dashboard.empty.verbose: "Geen verbose bekend"
-action.entity.create.verbose: "verbose aanmaken"
-text.entity.create.verbose: Aanmaken
-text.entity.edit.verbose: Bewerken
-
-dialog.delete_warning: Weet je zeker dat je dit wil verwijderen?
-
-label.actions: Acties
+# general
 label.new: Nieuw
-label.details: Details
 label.edit: Bewerk
 label.editing: Bewerken
 label.save: Opslaan
 label.cancel: Annuleren
+label.select...: Maak een keuze...
 label.back: Terug
 label.overview: Overzicht
-label.select...: Maak een keuze...
-Select...: Maak een keuze...
-label.activate: Activeren
-label.deactivate: Deactiveren
+label.details: Details
 
 label.photo: Foto
 label.type: Soort
@@ -77,10 +58,15 @@ label.age: Leeftijd
 label.comment: Commentaar
 label.address: Adres
 
+text.dashboard.empty.verbose: "Geen verbose bekend"
+action.entity.create.verbose: "verbose aanmaken"
+text.entity.create.verbose: Aanmaken
+text.entity.edit.verbose: Bewerken
+
+dialog.delete_warning: Weet je zeker dat je dit wil verwijderen?
+
 choice.gender.male: Man
 choice.gender.female: Vrouw
-
-### Date / time
 
 value.date.year-mo-MO-day-DAY: DAY. day-mo-year
 value.date.year-mo-MO-day: day-mo-year
