@@ -3,7 +3,6 @@ title.horses-gear: Riding gear
 entity.verbose: Gear
 entity.verbose_plural: Gear
 
-label.brand: Brand
 label.color: Colour
 label.date_purchased: Buying date
 label.count: Uses

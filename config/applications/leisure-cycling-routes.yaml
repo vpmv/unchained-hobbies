@@ -1,0 +1,50 @@
+application:
+  fields:
+    name:
+      type: text
+      required: true
+      public: false
+
+    type:
+      type: choice
+      multiple: true
+      options:
+        - road
+        - gravel
+        - sand
+        - forest
+        - rural
+        - city
+
+    type_nodes:
+      type: boolean
+
+    image:
+      type: image
+      required: false
+      public: true
+
+    description:
+      type: textbox
+      required: false
+      public: false
+      dashboard:
+        visibility: detail
+
+    distance:
+      label: mean distance
+      type: float
+      _transform:
+        number:
+          suffix: km
+
+
+  meta:
+    exposes: [ name ]
+    slug: [ name ]
+    icon: fa-solid fa-mountain
+
+  sources:
+    count_rides:
+      application: leisure-cycling
+      function: count

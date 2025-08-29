@@ -1,0 +1,65 @@
+application:
+  fields:
+    date:
+      type: date
+      required: true
+      default: today
+    time:
+      type: time
+      required: true
+    bicycle:
+      source: bicycles
+    name:
+      type: text
+      required: false
+      default: ~
+    route:
+      source: routes
+      required: false
+    image:
+      type: image
+      required: false
+      public: false
+    description:
+      type: textbox
+      required: false
+      public: false
+      dashboard:
+        visibility: detail
+    description_special:
+      type: textbox
+      required: false
+      dashboard:
+        visibility: detail
+    score:
+      type: rating
+      options: [ 1, 5 ]
+      default: 5
+      dashboard: large
+    distance:
+      type: float
+      _transform:
+        number:
+          suffix: km
+    speed:
+      type: number
+      pointer:
+        type: external
+        fields: [ time, distance ]
+      _transform:
+        number:
+          suffix: km/h
+
+
+  meta:
+    exposes: [ date, name ]
+    slug: [ date ]
+    icon: fa-solid fa-bicycle
+    sort:
+      date: desc
+
+  sources:
+    bicycles:
+      application: leisure-bikes
+    routes:
+      application: leisure-cycling-routes

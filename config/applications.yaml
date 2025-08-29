@@ -9,9 +9,9 @@ categories:
       en: horse-riding
       nl: paardrijden
     public: true
-  entertainment:
+  leisure:
     routes:
-      en: entertainment
+      en: leisure
       nl: vrije-tijd
     public: true
 
@@ -74,6 +74,7 @@ applications:
     public: false
     order: 99
 
+## COOKING
   cooking:
     category: cooking
     routes:
@@ -82,11 +83,36 @@ applications:
     public: true
     order: -1
 
-  ent-reviews:
-    category: entertainment
+## LEISURE
+  leisure-reviews:
+    category: leisure
     routes:
       en: bad-reviews
-      nl: reviews
+      nl: slechte-reviews
+    public: true
+    order: 0
+
+  leisure-cycling:
+    category: leisure
+    routes:
+      en: cycling
+      nl: fietstochten
+    public: true
+    order: 0
+
+  leisure-cycling-routes:
+    category: leisure
+    routes:
+      en: cycling-routes
+      nl: fietsroutes
+    public: true
+    order: 0
+
+  leisure-bikes:
+    category: leisure
+    routes:
+      en: bikes
+      nl: fietsen
     public: true
     order: 0
 

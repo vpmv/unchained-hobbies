@@ -1,0 +1,55 @@
+application:
+  fields:
+    brand:
+      type: text
+      required: true
+      default: Generic
+      public: false
+    name:
+      type: text
+      required: true
+    type:
+      type: choice
+      options:
+        - road
+        - gravel
+        - electric
+      dashboard: detail
+    type_ebike:
+      type: boolean
+      dashboard: detail
+    type_rental:
+      type: boolean
+      dashboard: large
+
+    purchase_date:
+      type: date
+      required: true
+      default: today
+      public: false
+    purchase_value:
+      type: number
+      required: false
+      public: false
+      dashboard: detail
+
+    total_distance:
+      type: number
+      source: total_distance
+      _transform:
+        number:
+          suffix: km
+
+  # Django style meta configuration for model
+  meta:
+    # primary identifier when used in other applications
+    # and detail pages
+    exposes: [ brand, name ]
+    icon: fa-solid fa-bicycle
+
+  sources:
+    total_distance:
+      application: leisure-cycling
+      function: sum
+      field: distance
+      #invert_join: true

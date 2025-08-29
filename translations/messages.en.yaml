@@ -4,15 +4,22 @@ category.horses.description: Overview & logs
 title.category.cooking: Cooking
 category.cooking.description: Fav. recipes
 
+title.category.leisure: Leisure
+category.leisure.description: Cycling & series
+
+label.date: Datum
+label.time: Time
+label.brand: Brand
+label.description: Description
+
+label.score: Score
 label.average: Average
 label.average_score: Avg. score
+
 label.horse: Horse
 label.horses: Horses
 label.discipline: Discipline
 label.disciplines: Disciplines
-
-title.category.entertainment: Leisure
-category.entertainment.description: Movies, series & more
 
 user.horses_main.miniature: Miniature
 user.horses_main.a_pony: A-Pony

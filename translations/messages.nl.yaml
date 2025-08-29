@@ -4,11 +4,18 @@ category.horses.description: Logboek & overzicht
 title.category.cooking: Koken
 category.cooking.description: Fav. recepten & inventaris
 
-title.category.entertainment: Vrije tijd
-category.entertainment.description: Films & series
+title.category.leisure: Vrije tijd
+category.leisure.description: Fietsen & films
 
+label.date: Datum
+label.time: Tijd
+label.description: Omschrijving
+label.brand: Merk
+
+label.score: Score
 label.average: Gemiddelde
 label.average_score: Gem. score
+
 label.horse: Paard
 label.horses: Paarden
 label.discipline: Discipline
